@@ -15,4 +15,4 @@ else:
 info = bot_utils.get_info(twitter_info["USER"])
 # info of form(Online, URL)
 if info[0]:
-	api.update_status(status="%s's twitch stream is now live! Link: %s" % (USER, info[1]))
+	api.update_status(status="%s's twitch stream is now live! Link: %s" % (twitter_info["USER"], info[1]))
