@@ -12,8 +12,7 @@ if twitter_info:
 else:
 	print "Please fill out the config.txt file"
 
-USER = 'tsm_theoddone'
-info = bot_utils.get_info(USER)
+info = bot_utils.get_info(twitter_info["USER"])
 # info of form(Online, URL)
 
 if info[0]:

@@ -25,7 +25,7 @@ def get_info(user):
 def twitter_info_setup(config_file="config.txt"):
 	bot_config = {}
 	required_fields = ["CONSUMER_KEY", "CONSUMER_SECRET",
-						"ACCESS_KEY", "ACCESS_SECRET"]
+						"ACCESS_KEY", "ACCESS_SECRET", "USER"]
 
 	with open(config_file, "r") as file:
 		for line in file:
